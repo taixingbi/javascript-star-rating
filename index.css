@@ -1,0 +1,40 @@
+
+
+.container{
+	width:1170px;
+	margin:20px auto;
+	text-align:center;
+}
+
+label{
+	position:relative;
+	width: 50px;
+    height: 40px;
+    display: inline-block;	
+}
+
+/*Insert content before, or after, the content of an element*/
+.check::before{
+	content:'\2605'; /* star*/
+	font-size:50px;
+	position:absolute;
+	color:#777;
+	left:0;
+	bottom:0;
+    line-height: 70px;	
+}
+
+.rated::after{
+	content:'\2605'; /* star*/
+	font-size:50px;
+	position:absolute;
+	color:orange;
+	left:0;
+	bottom:0;
+    line-height: 70px;	
+}
+
+
+.check:hover::before{
+	color:orange;
+}
